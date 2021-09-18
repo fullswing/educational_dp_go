@@ -26,6 +26,7 @@ func calc(dp [][]int64, w []int, v []int64, N int, W int) int64 {
 	return dp[1][W]
 }
 
+// 一元配列でも解ける
 func calc_sub(dp []int64, w []int64, v []int64, N int64, W int64) int64 {
 	for i := int64(1); i <= N; i++ {
 		for j := W; j >= 0; j-- {
